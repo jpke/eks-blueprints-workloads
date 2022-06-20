@@ -6,3 +6,4 @@ spec:
     targetRevision: main
   ingress:
     host: eks-blueprints.jpearnest.com
+    type: nginx
