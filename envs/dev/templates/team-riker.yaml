@@ -15,12 +15,6 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
     path: teams/team-riker/dev
-    helm:
-      parameters:
-      - name: spec.ingress.host
-        value: {{ .Values.teamRiker.ingress.host }}
-      - name: spec.ingress.type
-        value: {{ .Values.teamRiker.ingress.type }}
   syncPolicy:
     automated:
       prune: true
