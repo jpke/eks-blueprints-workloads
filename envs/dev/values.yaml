@@ -10,3 +10,5 @@ teamCarmen:
   enabled: false
 teamRiker:
   enabled: true
+  ingress:
+    host: dev.example.com
