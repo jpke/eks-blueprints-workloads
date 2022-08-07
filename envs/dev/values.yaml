@@ -12,4 +12,4 @@ teamRiker:
   enabled: true
   ingress:
     host: eks-blueprints.jpearnest.com
-    type: nginx
+    # type: nginx
