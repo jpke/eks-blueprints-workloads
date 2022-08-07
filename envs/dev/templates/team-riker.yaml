@@ -1,4 +1,4 @@
-{{ if .Values.team-riker.enabled }}
+{{- if .Values.teamRiker.enabled }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -18,12 +18,12 @@ spec:
     helm:
       parameters:
       - name: spec.ingress.host
-        value: {{ .Values.team-riker.ingress.host }}
+        value: {{ .Values.teamRiker.ingress.host }}
       - name: spec.ingress.type
-        value: {{ .Values.team-riker.ingress.type }}
+        value: {{ .Values.teamRiker.ingress.type }}
   syncPolicy:
     automated:
       prune: true
     syncOptions:
     - CreateNamespace=true
-{{-end }}
+{{- end }}

@@ -4,11 +4,11 @@ spec:
   source:
     repoURL: https://github.com/aws-samples/eks-blueprints-workloads
     targetRevision: main
-team-burnham:
+teamBurnham:
   enabled: false
-team-carmen:
+teamCarmen:
   enabled: false
-team-riker:
+teamRiker:
   enabled: true
   ingress:
     host: eks-blueprints.jpearnest.com
