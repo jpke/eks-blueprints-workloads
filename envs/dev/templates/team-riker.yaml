@@ -1,4 +1,4 @@
-{{- if .Values.team-riker.enabled }}
+{{ if .Values.team-riker.enabled }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -26,4 +26,4 @@ spec:
       prune: true
     syncOptions:
     - CreateNamespace=true
-{{- end }}
+{{-end }}
